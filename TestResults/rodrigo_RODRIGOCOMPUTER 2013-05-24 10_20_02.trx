@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2d41bd52-5d4f-49c0-98b3-2bce9aafd1dd" name="rodrigo@RODRIGOCOMPUTER 2013-05-24 10:20:02" runUser="RMMSOFTWARE\rodrigo" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="41b9144d-3cf9-4ec6-9945-27c0481f82ab">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="rodrigo_RODRIGOCOMPUTER 2013-05-24 10_20_02">
+      <DeploymentItem filename="C:\Dados\RMMSoftware\Clientes\BioForLife\Documento integração Otis\Exemplos\UPDIntegration\packages\Moq.4.0.10827\lib\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\Dados\RMMSoftware\Clientes\BioForLife\Documento integração Otis\Exemplos\UPDIntegration\UPDIntegration\bin\Debug\UPDIntegration.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-05-24T10:20:02.8189138-03:00" queuing="2013-05-24T10:20:02.8699167-03:00" start="2013-05-24T10:20:02.9049187-03:00" finish="2013-05-24T10:20:03.3529443-03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="testSendMessageCallReturnBytesLength" storage="c:\dados\rmmsoftware\clientes\bioforlife\documento integração otis\exemplos\updintegration\updintegration_unittest\bin\debug\updintegration_unittest.dll" id="1a6c3c7c-bbc6-cb7f-9a1f-6f9e90cb6979">
+      <Execution id="657d77ff-d77c-4304-a410-c4b274743ea0" />
+      <TestMethod codeBase="C:/Dados/RMMSoftware/Clientes/BioForLife/Documento integração Otis/Exemplos/UPDIntegration/UPDIntegration_UnitTest/bin/Debug/UPDIntegration_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UPDIntegration_UnitTest.UdpTest, UPDIntegration_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSendMessageCallReturnBytesLength" />
+    </UnitTest>
+    <UnitTest name="testSendMessageCallSend" storage="c:\dados\rmmsoftware\clientes\bioforlife\documento integração otis\exemplos\updintegration\updintegration_unittest\bin\debug\updintegration_unittest.dll" id="3ba8005b-d1cb-21f2-6d9d-6b7729512295">
+      <Execution id="5c2becc4-1f2b-43d1-b249-506061b5b9dd" />
+      <TestMethod codeBase="C:/Dados/RMMSoftware/Clientes/BioForLife/Documento integração Otis/Exemplos/UPDIntegration/UPDIntegration_UnitTest/bin/Debug/UPDIntegration_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UPDIntegration_UnitTest.UdpTest, UPDIntegration_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSendMessageCallSend" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1a6c3c7c-bbc6-cb7f-9a1f-6f9e90cb6979" executionId="657d77ff-d77c-4304-a410-c4b274743ea0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ba8005b-d1cb-21f2-6d9d-6b7729512295" executionId="5c2becc4-1f2b-43d1-b249-506061b5b9dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="657d77ff-d77c-4304-a410-c4b274743ea0" testId="1a6c3c7c-bbc6-cb7f-9a1f-6f9e90cb6979" testName="testSendMessageCallReturnBytesLength" computerName="RODRIGOCOMPUTER" duration="00:00:00.1901016" startTime="2013-05-24T10:20:02.8959182-03:00" endTime="2013-05-24T10:20:03.3069417-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="657d77ff-d77c-4304-a410-c4b274743ea0">
+    </UnitTestResult>
+    <UnitTestResult executionId="5c2becc4-1f2b-43d1-b249-506061b5b9dd" testId="3ba8005b-d1cb-21f2-6d9d-6b7729512295" testName="testSendMessageCallSend" computerName="RODRIGOCOMPUTER" duration="00:00:00.0185535" startTime="2013-05-24T10:20:03.3089418-03:00" endTime="2013-05-24T10:20:03.3389435-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c2becc4-1f2b-43d1-b249-506061b5b9dd">
+    </UnitTestResult>
+  </Results>
+</TestRun>
