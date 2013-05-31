@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4f07b91a-9a7a-41c2-8d5e-cba9a08015f7" name="rodrigo@RODRIGOCOMPUTER 2013-05-31 11:05:28" runUser="RMMSOFTWARE\rodrigo" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="41b9144d-3cf9-4ec6-9945-27c0481f82ab">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="rodrigo_RODRIGOCOMPUTER 2013-05-31 11_05_28">
+      <DeploymentItem filename="C:\Dados\RMMSoftware\Clientes\BioForLife\Documento integração Otis\Exemplos\UPDIntegration\UPDIntegration\bin\Release\UDPIntegration.dll" />
+      <DeploymentItem filename="C:\Dados\RMMSoftware\Clientes\BioForLife\Documento integração Otis\Exemplos\UPDIntegration\packages\Moq.4.0.10827\lib\NET40\Moq.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-05-31T11:05:28.6466178-03:00" queuing="2013-05-31T11:05:28.7726250-03:00" start="2013-05-31T11:05:28.7836256-03:00" finish="2013-05-31T11:05:29.3136559-03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="testSendMessageCallSend" storage="c:\dados\rmmsoftware\clientes\bioforlife\documento integração otis\exemplos\updintegration\updintegration_unittest\bin\release\udpintegration_unittest.dll" id="3ba8005b-d1cb-21f2-6d9d-6b7729512295">
+      <Execution id="8b1b7931-6953-494a-84df-0498846d194c" />
+      <TestMethod codeBase="C:/Dados/RMMSoftware/Clientes/BioForLife/Documento integração Otis/Exemplos/UPDIntegration/UPDIntegration_UnitTest/bin/Release/UDPIntegration_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UPDIntegration_UnitTest.UdpTest, UDPIntegration_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSendMessageCallSend" />
+    </UnitTest>
+    <UnitTest name="testReceiveMessageCallReturnBytes" storage="c:\dados\rmmsoftware\clientes\bioforlife\documento integração otis\exemplos\updintegration\updintegration_unittest\bin\release\udpintegration_unittest.dll" id="6bb31540-0034-5229-f2e0-ba5b754e7e1d">
+      <Execution id="0a1da05e-2a30-4e3f-9824-1df794f12315" />
+      <TestMethod codeBase="C:/Dados/RMMSoftware/Clientes/BioForLife/Documento integração Otis/Exemplos/UPDIntegration/UPDIntegration_UnitTest/bin/Release/UDPIntegration_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UPDIntegration_UnitTest.UdpTest, UDPIntegration_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testReceiveMessageCallReturnBytes" />
+    </UnitTest>
+    <UnitTest name="testSendMessageCallReturnBytesLength" storage="c:\dados\rmmsoftware\clientes\bioforlife\documento integração otis\exemplos\updintegration\updintegration_unittest\bin\release\udpintegration_unittest.dll" id="1a6c3c7c-bbc6-cb7f-9a1f-6f9e90cb6979">
+      <Execution id="d80f99e9-9a94-4bcb-8b16-887e5a15a2ce" />
+      <TestMethod codeBase="C:/Dados/RMMSoftware/Clientes/BioForLife/Documento integração Otis/Exemplos/UPDIntegration/UPDIntegration_UnitTest/bin/Release/UDPIntegration_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UPDIntegration_UnitTest.UdpTest, UDPIntegration_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSendMessageCallReturnBytesLength" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1a6c3c7c-bbc6-cb7f-9a1f-6f9e90cb6979" executionId="d80f99e9-9a94-4bcb-8b16-887e5a15a2ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ba8005b-d1cb-21f2-6d9d-6b7729512295" executionId="8b1b7931-6953-494a-84df-0498846d194c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6bb31540-0034-5229-f2e0-ba5b754e7e1d" executionId="0a1da05e-2a30-4e3f-9824-1df794f12315" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d80f99e9-9a94-4bcb-8b16-887e5a15a2ce" testId="1a6c3c7c-bbc6-cb7f-9a1f-6f9e90cb6979" testName="testSendMessageCallReturnBytesLength" computerName="RODRIGOCOMPUTER" duration="00:00:00.2097980" startTime="2013-05-31T11:05:28.7876258-03:00" endTime="2013-05-31T11:05:29.2586528-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d80f99e9-9a94-4bcb-8b16-887e5a15a2ce">
+    </UnitTestResult>
+    <UnitTestResult executionId="8b1b7931-6953-494a-84df-0498846d194c" testId="3ba8005b-d1cb-21f2-6d9d-6b7729512295" testName="testSendMessageCallSend" computerName="RODRIGOCOMPUTER" duration="00:00:00.0189444" startTime="2013-05-31T11:05:29.2616530-03:00" endTime="2013-05-31T11:05:29.2846543-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b1b7931-6953-494a-84df-0498846d194c">
+    </UnitTestResult>
+    <UnitTestResult executionId="0a1da05e-2a30-4e3f-9824-1df794f12315" testId="6bb31540-0034-5229-f2e0-ba5b754e7e1d" testName="testReceiveMessageCallReturnBytes" computerName="RODRIGOCOMPUTER" duration="00:00:00.0070262" startTime="2013-05-31T11:05:29.2876544-03:00" endTime="2013-05-31T11:05:29.2976550-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a1da05e-2a30-4e3f-9824-1df794f12315">
+    </UnitTestResult>
+  </Results>
+</TestRun>

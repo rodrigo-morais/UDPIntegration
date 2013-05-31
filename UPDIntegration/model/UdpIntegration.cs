@@ -16,15 +16,48 @@ namespace UPDIntegration
 
         public int send(string message)
         {
-            var data = Encoding.UTF8.GetBytes(message);
-            int returnLength = connector.send(data, data.Length);
-            return returnLength;
+            try
+            {
+                var data = Encoding.UTF8.GetBytes(message);
+                int returnLength = connector.send(data, data.Length);
+                return returnLength;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int send(short message)
+        {
+            try
+            {
+                var data = BitConverter.GetBytes(message);
+                int returnLength = connector.send(data, data.Length);
+                return returnLength;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public byte[] receive()
         {
-            var data = connector.receive();
-            return data;
+            try
+            {
+                var data = connector.receive();
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void close()
+        {
+            this.connector.disconnect();
         }
     }
 }

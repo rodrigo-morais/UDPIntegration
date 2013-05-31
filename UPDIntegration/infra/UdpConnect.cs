@@ -10,5 +10,6 @@ namespace UPDIntegration
         int send(byte[] data, int length);
         byte[] receive();
         void disconnect();
+        bool isConnect();
     }
 }
