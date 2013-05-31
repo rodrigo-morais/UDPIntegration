@@ -15,7 +15,6 @@ namespace UPDIntegration
         private string ipRemote;
         private int portRemote;
         private string localIP;
-        private bool close;
         private bool connected;
 
         public UdpConnector(string ipRemote, int portRemote, int port)
