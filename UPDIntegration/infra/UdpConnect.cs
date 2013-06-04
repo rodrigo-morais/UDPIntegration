@@ -11,5 +11,6 @@ namespace UPDIntegration
         byte[] receive();
         void disconnect();
         bool isConnect();
+        void receiveAsynchronous(int milliseconds, Action<dynamic> method, Type methodType);
     }
 }

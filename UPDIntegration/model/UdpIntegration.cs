@@ -55,9 +55,31 @@ namespace UPDIntegration
             }
         }
 
+        public void receiveByTime<T>(int milliseconds, Action<T> method)
+        {
+            try
+            {
+                Action<dynamic> methodAction = (n) => method(n);
+                Type methodType = method.GetType().GetGenericArguments()[0];
+
+                connector.receiveAsynchronous(milliseconds, methodAction, methodType);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public void close()
         {
-            this.connector.disconnect();
+            try
+            {
+                this.connector.disconnect();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
