@@ -13,26 +13,23 @@ namespace UPDIntegration
         {
             this.connector = connector;
         }
-
-        public int send(string message)
+        
+        public int send(dynamic message)
         {
             try
             {
-                var data = Encoding.UTF8.GetBytes(message);
-                int returnLength = connector.send(data, data.Length);
-                return returnLength;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+                Type type = message.GetType();
+                dynamic data;
 
-        public int send(short message)
-        {
-            try
-            {
-                var data = BitConverter.GetBytes(message);
+                if (type == typeof(String))
+                {
+                    data = Encoding.UTF8.GetBytes(message);
+                }
+                else
+                {
+                    data = BitConverter.GetBytes(message);
+                }
+                
                 int returnLength = connector.send(data, data.Length);
                 return returnLength;
             }
