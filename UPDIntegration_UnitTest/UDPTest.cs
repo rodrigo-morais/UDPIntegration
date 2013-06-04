@@ -106,5 +106,43 @@ namespace UPDIntegration_UnitTest
             udp.close();
             udp.send(message);
         }
+
+        [TestMethod]
+        public void testReceiveAsynWithMethodWithShortParameterCallOnceReceiveAsynchronousMethodInConnector()
+        {
+            //Arrange
+            Action<short> method = (message) => { };
+
+            var connector = new Mock<UdpConnect>();
+            connector.Setup(udpConnector => udpConnector.receiveAsynchronous(1, It.IsAny<Action<dynamic>>(), typeof(Int16)));
+
+            UdpIntegration integration = new UdpIntegration(connector.Object);
+            
+
+            //Act
+            integration.receiveByTime(1, method);
+
+            //Assert
+            connector.Verify(conn => conn.receiveAsynchronous(1, It.IsAny<Action<dynamic>>(), typeof(Int16)), Times.Once());
+        }
+
+        [TestMethod]
+        public void testReceiveAsynWithMethodWithStringParameterCallOnceReceiveAsynchronousMethodInConnector()
+        {
+            //Arrange
+            Action<String> method = (message) => { };
+
+            var connector = new Mock<UdpConnect>();
+            connector.Setup(udpConnector => udpConnector.receiveAsynchronous(1, It.IsAny<Action<dynamic>>(), typeof(String)));
+
+            UdpIntegration integration = new UdpIntegration(connector.Object);
+
+
+            //Act
+            integration.receiveByTime(1, method);
+
+            //Assert
+            connector.Verify(conn => conn.receiveAsynchronous(1, It.IsAny<Action<dynamic>>(), typeof(String)), Times.Once());
+        }
     }
 }
